@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="Author" content="Madalitso Saulos">
+<title>PaintArch-Premium Painting Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/style.css">
+<style>
+  
+</style>
+
+</head>
+<body>
+<!-- Loading Animation -->
+<div id="loading-screen">
+  <div class="loader-container">
+    <div class="circle-grid">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+      <div class="circle circle-4"></div>
+      <span class="loader-text">Loading</span>
+    </div>
+  </div>
+</div>i  
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-text"><span>Paint </span><span>Arc </span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#services" style="display:inline-flex;align-items:center;gap:5px">Services <i class="fas fa-chevron-down dropdown-arrow" style="font-size:.65rem"></i></a>
+        <div class="dropdown-menu">
+          <a href="#services"><i class="fas fa-home"></i> Interior Painting</a>
+          <a href="#services"><i class="fas fa-building"></i> Exterior Painting</a>
+          <a href="#services"><i class="fas fa-industry"></i> Commercial Projects</a>
+          <a href="#services"><i class="fas fa-spray-can"></i> Texture & Finishes</a>
+          <a href="#services"><i class="fas fa-shield-alt"></i> Waterproofing</a>
+          <a href="#services"><i class="fas fa-pencil-ruler"></i> Color Consultation</a>
+        </div>
+      </li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary" style="padding:10px 22px;font-size:.875rem">Get Free Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#home"><i class="fas fa-home" style="color:var(--orange);width:20px"></i> Home</a></li>
+    <li>
+      <a class="mobile-dropdown-toggle" onclick="toggleMobileSub(this)">
+        <span style="display:flex;align-items:center;gap:10px"><i class="fas fa-paint-brush" style="color:var(--orange);width:20px"></i> Services</span>
+        <i class="fas fa-chevron-down" style="font-size:.75rem;color:var(--gray-mid)"></i>
+      </a>
+      <div class="mobile-sub">
+        <a href="#services">Interior Painting</a>
+        <a href="#services">Exterior Painting</a>
+        <a href="#services">Commercial Projects</a>
+        <a href="#services">Texture &amp; Finishes</a>
+      </div>
+    </li>
+    <li><a href="#gallery"><i class="fas fa-images" style="color:var(--orange);width:20px"></i> Gallery</a></li>
+    <li><a href="#testimonials"><i class="fas fa-star" style="color:var(--orange);width:20px"></i> Reviews</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope" style="color:var(--orange);width:20px"></i> Contact</a></li>
+    <li style="margin-top:16px"><a href="#contact" class="btn btn-primary" style="justify-content:center">Get Free Quote</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg">
+    <div class="splash splash-1"></div>
+    <div class="splash splash-2"></div>
+    <div class="splash splash-3"></div>
+    <div class="splash splash-4"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow fade-up"><i class="fas fa-award"></i> #1 Rated Painting Company</div>
+      <h1 class="hero-title fade-up fade-up-delay-1">
+        <span class="typing-wrapper"><span id="typing-text"></span><span class="cursor"></span></span>
+        <span class="highlight">Walls Tell Your Story</span>
+      </h1>
+      <p class="hero-sub fade-up fade-up-delay-2">Premium interior, exterior and commercial painting services crafted with precision, passion and lasting quality that transforms every space.</p>
+      <div class="hero-ctas fade-up fade-up-delay-3">
+        <a href="#contact" class="btn btn-primary"></i> Request a Quote</a>
+        <a href="#gallery" class="btn btn-white"> View Our Work</a>
+      </div>
+      <div class="hero-stats fade-up fade-up-delay-3">
+        <div class="stat-item"><div class="stat-num">50 <span>+</span></div><div class="stat-label">Projects Completed</div></div>
+        <div class="stat-item"><div class="stat-num">12 <span>yrs</span></div><div class="stat-label">Of Excellence</div></div>
+        <div class="stat-item"><div class="stat-num">98 <span>%</span></div><div class="stat-label">Client Satisfaction</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / INTRO -->
+<section id="about">
+  <div class="container">
+    <div class="intro-grid">
+        <div class="img-placeholder">
+        <div class="intro-badge">
+          <div class="badge-icon"><i class="fas fa-medal"></i></div>
+          <div class="badge-text"><strong>500+</strong><span>Happy Clients </span></div>
+        </div>
+      </div>
+      <div class="intro-content fade-up fade-up-delay-2">
+        <span class="section-tag">About PaintArc</span>
+        <h2 class="section-title">Crafting Beautiful Spaces Since 2012</h2>
+        <p class="section-sub">PaintArc is a premium painting company delivering exceptional results for homes, offices, and commercial spaces. Our expert team combines technical mastery with an eye for design.</p>
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-check"></i></div>
+            <div class="feature-text"><strong>Licensed &amp; Insured</strong><p>Full liability coverage and certified painters on every job.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+            <div class="feature-text"><strong>Eco-Friendly Paints</strong><p>Low-VOC, environment-safe products for healthier spaces.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+            <div class="feature-text"><strong>On-Time Delivery</strong><p>We respect your schedule and always finish on the agreed date.</p></div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-phone"></i> Talk to an Expert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">From a single accent wall to a full commercial complex — we handle every painting project with the same level of care.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-home"></i></div>
+        <h3>Interior Painting</h3>
+        <p>Transform your living spaces with our professional interior painting service. Perfect prep, flawless finishes, no mess left behind.</p>
+        <a href="#services-full" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-1">
+        <div class="service-icon"><i class="fas fa-building"></i></div>
+        <h3>Exterior Painting</h3>
+        <p>Weather-resistant exterior coatings that protect your property and boost curb appeal — tested for durability in all conditions.</p>
+        <a href="#services-full" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-2">
+        <div class="service-icon"><i class="fas fa-industry"></i></div>
+        <h3>Commercial Projects</h3>
+        <p>Large-scale commercial painting with minimal disruption to your operations. Office, retail, warehouse — we do it all.</p>
+        <a href="#services-full" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fas fa-spray-can"></i></div>
+        <h3>Texture And Finishes</h3>
+        <p>Add depth and character with custom textures — venetian plaster, suede effects, stone finishes, and more.</p>
+        <a href="#services-full" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-1">
+        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Waterproofing</h3>
+        <p>Protect your investment with professional waterproofing solutions for walls, roofs, and basements.</p>
+        <a href="#services-full" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up fade-up-delay-2">
+        <div class="service-icon"><i class="fas fa-palette"></i></div>
+        <h3>Color Consultation</h3>
+        <p>Not sure which shade? Our color consultants help you pick the perfect palette for your vision and space.</p>
+        <a href="#services-full" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / PROJECTS -->
+<section id="gallery">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-tag">Our Portfolio</span>
+      <h2 class="section-title">Recent Projects</h2>
+      <p class="section-sub">A look at some of our finest work across residential, commercial and specialty projects.</p>
+    </div>
+    <div class="gallery-tabs fade-up">
+      <button class="tab-btn active" onclick="filterGallery('all',this)">All Projects</button>
+      <button class="tab-btn" onclick="filterGallery('interior',this)">Interior</button>
+      <button class="tab-btn" onclick="filterGallery('exterior',this)">Exterior</button>
+      <button class="tab-btn" onclick="filterGallery('commercial',this)">Commercial</button>
+    </div>
+    <div class="gallery-grid">
+
+      <div class="gallery-item large fade-up" data-cat="interior">
+        <div class="gallery-placeholder-one"></div>
+        <div class="gallery-overlay"><h4>Modern Living Room</h4><span>Interior · 2025</span></div>
+      </div>
+      <div class="gallery-item fade-up" data-cat="interior">
+        <div class="gallery-placeholder-one warm"></div>
+        <div class="gallery-overlay"><h4>Master Bedroom</h4><span>Interior · 2025</span></div>
+
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-1" data-cat="exterior">
+        <div class="gallery-placeholder-two"></div>
+        <div class="gallery-overlay"><h4>Residential Exterior</h4><span>Exterior · 2026</span></div>
+      </div>
+      <div class="gallery-item fade-up" data-cat="exterior">
+        <div class="gallery-placeholder-two accent"></div>
+        <div class="gallery-overlay"><h4>Industrial Complex</h4><span>Exterior · 2026</span></div>
+      </div>
+      <div class="gallery-item fade-up fade-up-delay-2" data-cat="commercial">
+        <div class="gallery-placeholder-three"></div>
+        <div class="gallery-overlay"><h4>Office Complex</h4><span>Commercial · 2025</span></div>
+      </div>
+      <div class="gallery-item large fade-up fade-up-delay-1" data-cat="commercial">
+        <div class="gallery-placeholder-three accent"></i></div>
+        <div class="gallery-overlay"><h4>Retail Showroom</h4><span>Commercial · 2026</span></div>
+      </div>
+    </div>
+
+    <!-- Before / After -->
+    <div class="text-center fade-up" style="margin-top:80px">
+      <span class="section-tag">Transformations</span>
+      <h2 class="section-title">Before &amp; After</h2>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card fade-up">
+        <div class="ba-images">
+          <div class="ba-side"><div class="ba-label">Before</div><i class="fas fa-times-circle" style="font-size:2rem;color:rgba(255,255,255,.3)"></i></div>
+          <div class="ba-side after"><div class="ba-label">After</div><i class="fas fa-check-circle" style="font-size:2rem;color:rgba(255,255,255,.4)"></i></div>
+        </div>
+        <div class="ba-info"><h4>Living Room Renovation</h4><p>Old beige walls → modern deep blue accent wall</p></div>
+      </div>
+      <div class="ba-card fade-up fade-up-delay-1">
+        <div class="ba-images">
+          <div class="ba-side"><div class="ba-label">Before</div><i class="fas fa-times-circle" style="font-size:2rem;color:rgba(255,255,255,.3)"></i></div>
+          <div class="ba-side after"><div class="ba-label">After</div><i class="fas fa-check-circle" style="font-size:2rem;color:rgba(255,255,255,.4)"></i></div>
+        </div>
+        <div class="ba-info"><h4>Exterior Makeover</h4><p>Faded, peeling exterior → fresh, durable finish</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-tag" style="color:#FCD9B6">What Clients Say</span>
+      <h2 class="section-title" style="color:#fff">Trusted by Hundreds</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,.65);margin:0 auto">Real feedback from real clients who trusted PaintArch with their spaces.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"PaintArc completely transformed our home. The team was professional, clean, and finished ahead of schedule. The color consultation alone was worth it!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SM</div>
+          <div><div class="author-name">Sarah M.</div><div class="author-title">Homeowner, Lilongwe</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-1">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"We hired PaintArc for our office renovation — 3,000 sqft done in just 5 days with zero business disruption. Absolutely incredible work ethic."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:var(--blue-light)">JK</div>
+          <div><div class="author-name">James K.</div><div class="author-title">CEO, Optics Eye Care</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up fade-up-delay-2">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p class="testimonial-text">"The waterproofing and exterior paint job held up perfectly through two rainy seasons. I've recommended PaintArc to five of my neighbors already."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:#059669">LN</div>
+          <div><div class="author-name">Linda N.</div><div class="author-title">Property Manager</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="container">
+    <div class="cta-inner fade-up">
+      <div class="cta-text">
+        <h2>Ready to Transform Your Space?</h2>
+        <p>Get a free, no-obligation quote within 24 hours. Let's create something beautiful together.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-white"><i class="fas fa-file-invoice"></i> Get Free Quote</a>
+        <a href="tel:+265999000000" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff"><i class="fas fa-phone"></i> Call Us Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES FULL -->
+<section id="services-full">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-tag">Complete Services</span>
+      <h2 class="section-title">Everything We Offer</h2>
+      <p class="section-sub">Professional painting and coating services for every need and budget.</p>
+    </div>
+    <div class="services-full-grid">
+      <div class="service-full-card fade-up">
+        <div class="service-full-header"><i class="fas fa-home"></i><h3>Interior Painting</h3></div>
+        <div class="service-full-body">
+          <p>From living rooms to kitchens, bedrooms to hallways — we paint every interior surface with precision. We handle all surface preparation, priming, and finishing.</p>
+          <div class="service-tags">
+            <span class="tag">Walls &amp; Ceilings</span><span class="tag">Trims &amp; Doors</span><span class="tag">Feature Walls</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-full-card fade-up fade-up-delay-1">
+        <div class="service-full-header"><i class="fas fa-building"></i><h3>Exterior Painting</h3></div>
+        <div class="service-full-body">
+          <p>Weather-resistant coatings that shield your building from UV, moisture, and time. We use premium products designed for the local climate.</p>
+          <div class="service-tags">
+            <span class="tag">Façade</span><span class="tag">Boundary Walls</span><span class="tag">Rooftops</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-full-card fade-up">
+        <div class="service-full-header"><i class="fas fa-industry"></i><h3>Commercial Painting</h3></div>
+        <div class="service-full-body">
+          <p>Large-scale commercial projects handled efficiently — offices, hotels, shopping malls, schools, and hospitals. Weekend and after-hours scheduling available.</p>
+          <div class="service-tags">
+            <span class="tag">Offices</span><span class="tag">Retail</span><span class="tag">Industrial</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-full-card fade-up fade-up-delay-1">
+        <div class="service-full-header"><i class="fas fa-spray-can"></i><h3>Specialty Finishes</h3></div>
+        <div class="service-full-body">
+          <p>Elevate your space with decorative finishes: venetian plaster, faux stone, metallic paints, chalkboard walls, and custom murals.</p>
+          <div class="service-tags">
+            <span class="tag">Venetian Plaster</span><span class="tag">Metallic</span><span class="tag">Murals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quote CTA -->
+    <div class="text-center" style="margin-top:48px">
+      <a href="#contact" class="btn btn-primary" style="font-size:1rem;padding:16px 40px"><i class="fas fa-file-invoice-dollar"></i> Request a Quote Now</a>
+    </div>
+
+  
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why-us">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-tag">Why PaintArc </span>
+      <h2 class="section-title">The PaintArc Difference</h2>
+      <p class="section-sub">We're not just painters — we're craftspeople dedicated to making your space look its absolute best.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-icon"><i class="fas fa-certificate"></i></div>
+        <h4>Certified Experts</h4>
+        <p>Every painter is professionally trained, background-checked, and fully insured.</p>
+      </div>
+      <div class="why-card fade-up fade-up-delay-1">
+        <div class="why-icon"><i class="fas fa-tools"></i></div>
+        <h4>Premium Materials</h4>
+        <p>We only use top-tier paints and materials that last 10+ years without fading.</p>
+      </div>
+      <div class="why-card fade-up fade-up-delay-2">
+        <div class="why-icon"><i class="fas fa-hand-holding-usd"></i></div>
+        <h4>Transparent Pricing</h4>
+        <p>No hidden fees. Your quote is your final price, always. We explain every cost.</p>
+      </div>
+      <div class="why-card fade-up fade-up-delay-3">
+        <div class="why-icon"><i class="fas fa-redo"></i></div>
+        <h4>Satisfaction Guarantee</h4>
+        <p>Not happy? We come back and fix it — no questions asked, no extra charge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Have a project in mind? Let's talk. We'll get back to you within one business day.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+265999000000">+265 999 000 000</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:#25D366"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/265999000000">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:var(--orange)"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:hello@paintarch.com">paintarc@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:#6B7280"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Business Hours</h4>
+            <div class="hours-grid">
+              <div class="hours-row"><span>Mon – Fri &nbsp;</span><span>7:00 AM – 6:00 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span>8:00 AM – 4:00 PM</span></div>
+              <div class="hours-row"><span>Sunday:</span><span> By Appointment</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:#7C3AED"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Location</h4>
+            <p>123 Masauko Rd, Blantyre, Malawi</p>
+             <iframe class="map-placeholder" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122864.9332632773!2d34.94836283427054!3d-15.776027790679967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d84513cbc0005f%3A0x236358dae4d811e6!2sBlantyre!5e0!3m2!1sen!2smw!4v1782433186108!5m2!1sen!2smw" width="600" height="450" style="border:0;"
+              allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:.85rem;color:var(--gray-mid);margin-bottom:10px;font-weight:600">Follow Us</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/265999000000" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form fade-up fade-up-delay-2" id="contactForm" method="POST" action="/Send_mail.php">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" placeholder="John" maxlength="50" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" placeholder="Doe" maxlength="50" required/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email"  name="email" placeholder="john@example.com" maxlength="20" required/>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel"  name="phone" placeholder="+265 xxx xxx xxx" maxlength="14" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select name="service" required>
+            <option value="">Select a service…</option>
+            <option>Interior Painting</option>
+            <option>Exterior Painting</option>
+            <option>Commercial Painting</option>
+            <option>Texture &amp; Finishes</option>
+            <option>Waterproofing</option>
+            <option>Color Consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea name="message" placeholder="Tell us about your project — size, timeline or any special requirements…" required></textarea>
+        </div>
+        <button type="button" class="form-submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <!-- <div id="form-success" style="display:none;margin-top:16px;padding:14px;background:rgba(5,150,105,.08);border:1px solid rgba(5,150,105,.2);border-radius:10px;color:#065F46;font-size:.875rem;font-weight:600;text-align:center">
+          <i class="fas fa-check-circle"></i> Thank you! We'll be in touch within 24 hours.
+        </div> -->
+        <div id="form-message" style="display:none;margin-top:15px;padding:12px;border-radius:8px;font-weight:600;"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <div class="logo-text"><span>Paint</span><span>Arch</span></div>
+        </a>
+        <p>Premium painting services for homes, offices, and commercial spaces. Quality you can see, craftsmanship you can feel.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" style="background:rgba(255,255,255,.07);color:rgba(255,255,255,.6)"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" style="background:rgba(255,255,255,.07);color:rgba(255,255,255,.6)"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" style="background:rgba(255,255,255,.07);color:rgba(255,255,255,.6)"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Interior Painting</a></li>
+          <li><a href="#services">Exterior Painting</a></li>
+          <li><a href="#services">Commercial</a></li>
+          <li><a href="#services">Textures &amp; Finishes</a></li>
+          <li><a href="#services">Waterproofing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Portfolio</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+265999000000"><i class="fas fa-phone" style="width:16px;color:var(--orange)"></i> +265 999 000 000</a></li>
+          <li><a href="https://wa.me/265999000000"><i class="fab fa-whatsapp" style="width:16px;color:var(--orange)"></i> WhatsApp</a></li>
+          <li><a href="mailto:hello@paintarch.com"><i class="fas fa-envelope" style="width:16px;color:var(--orange)"></i> paintarc@gmail.com</a></li>
+          <li><a href="#contact"><i class="fas fa-map-marker-alt" style="width:16px;color:var(--orange)"></i> Blantyre, Malawi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> Copyrigh © 2026 <b>PaintArch</b> | Powered by  <b>Cytech Systems</b>. All rights reserved.</p>
+      <p style="font-size:.8rem;color:rgba(255,255,255,.35)">Designed with Love for excellence</p>
+    </div>
+  </div>
+</footer>
+<script src="/Script.js"></script>
+</body>
+</html>
