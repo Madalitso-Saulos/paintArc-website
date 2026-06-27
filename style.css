@@ -609,12 +609,21 @@ background:
   display:grid;grid-template-columns:1fr 1fr;gap:2px}
   .ba-side-two{
     position:relative;min-height:200px;
+     background:  url('/images/beforettwo.png');
+    background-size: cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   display:flex;align-items:center;justify-content:center;
 
   }
+  .ba-side-two.after{
+  background: 
+     url('/images/afteertwo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  display:flex;align-items:center;justify-content:center}
 .ba-side{
   position:relative;min-height:200px;
   background: 
@@ -622,10 +631,9 @@ background:
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  display:flex;align-items:center;justify-content:center
+    display:flex;align-items:center;justify-content:center
 }
 .ba-side.after{
-
   background: 
      url('/images/adrertt.png');
     background-size: cover;
