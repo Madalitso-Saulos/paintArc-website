@@ -6,9 +6,6 @@ window.addEventListener('load', function() {
   }, 1500);
 });
 
-
-
-
 // ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -201,3 +198,22 @@ form.addEventListener("submit", function (e) {
     });
 
 });
+
+// ===== TYPING TEXT RESPONSIVE RESIZE =====
+function adjustTypingSize() {
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 480) {
+            heroTitle.style.fontSize = 'clamp(1.5rem, 4vw, 2rem)';
+        } else if (screenWidth < 768) {
+            heroTitle.style.fontSize = 'clamp(1.8rem, 4.5vw, 2.8rem)';
+        } else {
+            heroTitle.style.fontSize = '';
+        }
+    }
+}
+
+// Run on load and resize
+window.addEventListener('load', adjustTypingSize);
+window.addEventListener('resize', adjustTypingSize);
